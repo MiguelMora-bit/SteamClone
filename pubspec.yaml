@@ -1,0 +1,28 @@
+name: steam
+description: A Flutter project.
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=2.19.4 <3.0.0"
+
+dependencies:
+  animate_do: ^3.0.2
+  dio: ^5.0.2
+  fluro: ^2.0.5
+  flutter:
+    sdk: flutter
+  google_fonts: ^4.0.3
+  http: ^0.13.5
+  provider: ^6.0.5
+  video_player: ^2.6.0
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
