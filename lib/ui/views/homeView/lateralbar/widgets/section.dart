@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:steam/ui/lateralbar/widgets/custom_anchor.dart';
+import 'package:steam/ui/views/homeView/lateralbar/widgets/custom_anchor.dart';
 
 class Section extends StatelessWidget {
   final List<CustomAnchor> childs;

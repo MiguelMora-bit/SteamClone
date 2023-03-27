@@ -1,7 +1,6 @@
-import 'dart:convert';
-
-FeaturedCategoriesResponse featuredCategoriesResponseFromJson(String str) =>
-    FeaturedCategoriesResponse.fromJson(json.decode(str));
+FeaturedCategoriesResponse featuredCategoriesResponseFromJson(
+        Map<String, dynamic> str) =>
+    FeaturedCategoriesResponse.fromJson(str);
 
 class FeaturedCategoriesResponse {
   FeaturedCategoriesResponse({

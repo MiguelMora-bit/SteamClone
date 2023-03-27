@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:steam/ui/lateralbar/widgets/widgets.dart';
+import 'package:steam/ui/views/homeView/lateralbar/widgets/widgets.dart';
 
 class SteamCards extends StatelessWidget {
   const SteamCards({
@@ -12,7 +12,7 @@ class SteamCards extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Image.asset(
-          "steamcards_promo_02.png",
+          "assets/steamcards_promo_02.png",
           width: 220,
         ),
         const Section(

@@ -50,9 +50,11 @@ class _CustomAppMenuState extends State<CustomAppMenu>
           children: [
             Text(
               widget.text,
-              style: const TextStyle(color: Colors.white, fontSize: 14),
+              style: const TextStyle(color: Colors.white, fontSize: 12),
             ),
-            const SizedBox(height: 8,),
+            const SizedBox(
+              height: 8,
+            ),
             if (isOpen) ...widget.menuItems
           ],
         ),
@@ -61,19 +63,17 @@ class _CustomAppMenuState extends State<CustomAppMenu>
   }
 }
 
-double getSize(List<CustomMenuItem> items){
-
+double getSize(List<CustomMenuItem> items) {
   double size = 25;
 
-  if(items.isNotEmpty){
+  if (items.isNotEmpty) {
     for (var element in items) {
-      if(element.text.length > 13){
-        size+= 7;
+      if (element.text.length > 13) {
+        size += 7;
       }
       size += 25;
     }
   }
-
 
   return size;
 }

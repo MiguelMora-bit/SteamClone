@@ -11,7 +11,7 @@ class Logo extends StatelessWidget {
       child: GestureDetector(
         onTap: () => NavigationService.navigateTo('/'),
         child: Image.asset(
-          "logo_steam.png",
+          "assets/logo_steam.png",
           width: 210,
           height: 45,
         ),

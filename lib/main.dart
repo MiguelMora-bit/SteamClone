@@ -2,6 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:steam/dio/dio.dart';
+import 'package:steam/providers/featured_provider.dart';
 import 'package:steam/providers/search_provider.dart';
 import 'package:steam/providers/sidemenu_provider.dart';
 
@@ -24,6 +25,7 @@ class AppState extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(lazy: false, create: (_) => SideMenuProvider()),
         ChangeNotifierProvider(lazy: false, create: (_) => SearchProvider()),
+        ChangeNotifierProvider(lazy: false, create: (_) => FeatureProvider()),
       ],
       child: const MainApp(),
     );

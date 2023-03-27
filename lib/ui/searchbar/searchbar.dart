@@ -6,8 +6,50 @@ class SearchBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+
+    if (size.width <= 1000) {
+      return const SearchBarMovile();
+    } else {
+      return const SearchBarTabletDesktop();
+    }
+  }
+}
+
+class SearchBarMovile extends StatelessWidget {
+  const SearchBarMovile({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+
     return Container(
-      width: 900,
+      width: size.width * .98,
+      decoration: _buildBoxDecoration(),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: const [
+          _InitialBox(),
+          _CustomText(text: "New & Noteworthy"),
+          _CustomText(text: "Categories"),
+          _CustomText(text: "Point Shop"),
+          _CustomText(text: "News"),
+          _CustomText(text: "Labs"),
+          SearchText()
+        ],
+      ),
+    );
+  }
+}
+
+class SearchBarTabletDesktop extends StatelessWidget {
+  const SearchBarTabletDesktop({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
       decoration: _buildBoxDecoration(),
       child: Row(
         children: [
@@ -26,12 +68,11 @@ class SearchBar extends StatelessWidget {
       ),
     );
   }
+}
 
-  BoxDecoration _buildBoxDecoration() {
-    return const BoxDecoration(
-        gradient:
-            LinearGradient(colors: [Color(0xff307DBF), Color(0xff1D3E81)]));
-  }
+BoxDecoration _buildBoxDecoration() {
+  return const BoxDecoration(
+      gradient: LinearGradient(colors: [Color(0xff307DBF), Color(0xff1D3E81)]));
 }
 
 class _InitialBox extends StatelessWidget {

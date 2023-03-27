@@ -41,7 +41,8 @@ class CardSpecialOffers extends StatelessWidget {
                     padding: const EdgeInsets.all(5.0),
                     child: Text(
                       title,
-                      style: const TextStyle(color: Colors.white),
+                      style: const TextStyle(
+                          color: Colors.white, overflow: TextOverflow.ellipsis),
                     ),
                   ),
                   Row(

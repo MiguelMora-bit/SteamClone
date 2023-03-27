@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:steam/ui/lateralbar/widgets/widgets.dart';
+import 'package:steam/ui/views/homeView/lateralbar/widgets/widgets.dart';
 
 class BrowseCategoriesSection extends StatelessWidget {
   const BrowseCategoriesSection({

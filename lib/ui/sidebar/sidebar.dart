@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:steam/ui/shared/widgets/navbar_avatar.dart';
+import 'package:steam/ui/shared/navbar/partials/navbar_avatar.dart';
 
 class Sidebar extends StatelessWidget {
   const Sidebar({super.key});
 
   @override
   Widget build(BuildContext context) {
-
     return Container(
-      width: 200,
+      width: 250,
       height: double.infinity,
       decoration: buildBoxDecoration(),
       child: ListView(

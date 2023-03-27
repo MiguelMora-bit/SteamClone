@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:steam/ui/lateralbar/Partials/partials.dart';
+import 'package:steam/ui/views/homeView/lateralbar/Partials/partials.dart';
 
 class LataralBar extends StatelessWidget {
   const LataralBar({

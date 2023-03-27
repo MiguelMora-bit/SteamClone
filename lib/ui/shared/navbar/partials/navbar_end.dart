@@ -1,5 +1,7 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
-import 'package:steam/ui/shared/widgets/navbar_avatar.dart';
+import 'package:steam/ui/shared/navbar/partials/navbar_avatar.dart';
 import 'package:steam/ui/shared/widgets/notifications_indicator.dart';
 
 class NavbarEnd extends StatelessWidget {
@@ -8,7 +10,10 @@ class NavbarEnd extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(top: 10),
+      margin: const EdgeInsets.only(left: 600),
+      padding: const EdgeInsets.only(
+        top: 10,
+      ),
       width: 300,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -12,7 +12,7 @@ class SearchProvider extends ChangeNotifier {
   late String currentpathImgVideo;
   late bool isVideo;
 
-  getSearch() async {
+  Future<void> getSearch() async {
 
     print(term);
     result.clear();
